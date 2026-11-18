@@ -1,0 +1,29 @@
+# --- Private knowledge base: never publish ---
+# data/ holds the real (internal) documents the prototype was built for.
+# The public repo ships with sample_data/ instead.
+data/
+# The vector index contains the chunk texts + embeddings of whatever was ingested.
+index/
+*.npz
+
+# --- Secrets / local config ---
+.env
+.env.*
+.streamlit/secrets.toml
+.claude/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- OS / editors ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
